@@ -1,0 +1,12 @@
+<%= render :partial => "/search/form", :locals => { :search => @search, :focus => true } %>
+
+<%= render :partial => "/search/hits", :locals => { :results => @web_results, :template => "web", :title => "Web results", :pagination => @web_pagination } %>
+
+<%= render :partial => "/search/form", :locals => { :search => @search } %>
+
+
+<% content_for :right do %>
+  <%= render :partial => "/search/hits", :locals => { :results => @wikipedia_results, :template => "web", :title => "wikipedia" } if @wikipedia_results %>
+  <%= render :partial => "/search/hits", :locals => { :results => @news_results, :template => "news", :title => "news" } if @news_results %>
+  <%= render :partial => "/search/hits", :locals => { :results => @image_results, :template => "image", :title => "images" } if @image_results %>
+<% end %>

@@ -1,0 +1,16 @@
+<% pagination ||= false %>
+
+<% if results.results and !results.results.empty? %>
+  <%= content_tag "h#{pagination ? 1 : 2}", title %>
+  <% if pagination %>
+    <div class="hits_infos">
+      <%= page_entries_info pagination, :entry_name => "results" %>
+    </div>
+  <% end %>
+  <%= render :partial => "/search/#{template}", :collection => results.results %>
+  <% if pagination %>
+    <div class="pagination">
+      <%= will_paginate pagination, :param_name => "search[page]" %>
+    </div>
+  <% end %>
+<% end %>

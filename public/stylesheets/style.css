@@ -1,0 +1,134 @@
+body {
+    background: white;
+    color: #333;
+    font-family: 'Lucida Grande', Verdana;
+    font-size: 14px;
+}
+
+#content {
+    min-height: 600px;
+}
+
+#header {
+    background: #55BFFF url(../images/header.png) top left;
+    border-bottom: 3px solid #B1E1FF;
+    margin-bottom: 20px;
+}
+
+#header div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+
+#header div a, #header div a:visited, #header div a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#footer {
+    background: #EEF9FF;
+    border-top: 3px solid #B1E1FF;
+    margin-top: 20px;
+}
+
+#footer div {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+a, a:visited {
+    color: #0085B1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #19F;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1.8em;
+    border-bottom: 3px solid #B1E1FF;
+    margin-top: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.17em;
+    color: #19F;
+    background: #EEF9FF;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.hit {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.hit .title {
+    margin-bottom: 5px;
+}
+
+.hit .title a {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hit .title a:visited {
+    color: #19F;
+}
+
+.hit .abstract {
+    margin-bottom: 5px;
+}
+
+.hit .url {
+    color: green;
+    font-size: 0.8em;
+}
+
+.highlighted {
+    background: #EEF9FF;
+    padding-left: 10px;
+}
+
+.hits_infos {
+    text-align: right;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.pagination {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.form-query {
+    margin-left: 80px;
+}
+
+.form .form-txt {
+    border: 1px solid #B1E1FF !important;
+    background: #EEF9FF;
+    font-size: 1.5em;
+}
+
+.form .form-button {
+    background: #55BFFF url(../images/header.png) top left;
+    padding: 5px 10px;
+    border: 2px solid #B1E1FF;
+}
+
+.imagehit {
+    text-align: center;
+    font-size: 0.9em;
+}
+

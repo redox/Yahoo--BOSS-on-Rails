@@ -1,0 +1,20 @@
+<% focus ||= false %>
+
+<% form_for search, :url => { :controller => "search", :action => "results"}, :html => { :method => :get, :class => 'form form-query' } do |f| %>
+
+  <div class="grid-8-12">
+    <%= f.text_field :query, :class => 'form-txt', :id => (focus ? 'q' : nil) %>
+  </div>
+  <div class="grid-2-12">
+    <%= f.submit 'Search', :class => 'form-button' %>
+  </div>
+  
+<% end %>
+
+<% if focus %>
+<script type="text/javascript" charset="utf-8">
+  document.observe("dom:loaded", function() {
+    $('q').focus()
+  });
+</script>
+<% end %>

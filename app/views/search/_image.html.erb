@@ -1,0 +1,14 @@
+<div class="hit imagehit">
+  <div class="title">
+    <%= link_to image.title, image.url, :title => image.url %>
+  </div>
+  <div class="thumbnail">
+    <%= link_to image_tag(image.thumbnail_url), image.url %>
+  </div>
+  <div class="size">
+    <%= image.width %>x<%= image.height %>
+  </div>
+  <div class="url">
+    <%= smart_truncate(image.url) %>
+  </div>
+</div>

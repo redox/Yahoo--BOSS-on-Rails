@@ -1,0 +1,7 @@
+<div class="hit newshit">
+  <div class="title"><%= link_to news.title, news.url %></div>
+  <div class="abstract">
+    <%= news.abstract %>
+  </div>
+  <div class="url"><%= smart_truncate(news.url) %></div>
+</div>

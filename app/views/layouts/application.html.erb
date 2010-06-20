@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Yahoo! BOSS on Rails</title>
+	
+	<%= stylesheet_link_tag "reset" %>
+	<%= stylesheet_link_tag "960" %>
+	<%= stylesheet_link_tag "form-structure" %>
+	<%= stylesheet_link_tag "form-style" %>
+	<%= stylesheet_link_tag "style" %>
+	
+	<%= javascript_include_tag :defaults %>
+</head>
+<body>
+  <div id="header">
+    <div class="container_12">
+      <%= link_to "Yahoo! BOSS on Rails", '/' %>
+    </div>
+  </div>
+
+  <div id="content" class="container_12">
+    <div class="grid_8">
+      <%= yield %>      
+    </div>
+    <div class="grid_4">
+      <%= yield :right %>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div>
+      2010 - <%= link_to 'Sylvain Utard', 'http://sylvain.utard.info' %>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<% highlighted = web.url.match(/^https?:\/\/[^\/]+\/?(index.html|index.php|home)?$/) %>
+<div class="hit webhit<%= ' highlighted' if highlighted %>">
+  <div class="preview"><%#= image_tag "http://b.searchpreview.de/preview?s=#{web.url}" %></div>
+  <div class="title"><%= link_to web.title, web.url %></div>
+  <div class="abstract">
+    <%= web.abstract %>
+  </div>
+  <div class="url"><%= web.url %></div>
+</div>
