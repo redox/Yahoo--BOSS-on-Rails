@@ -20,7 +20,8 @@ role :app, "rednet.fr"
 role :web, "rednet.fr"
 role :db,  "rednet.fr", :primary => true
 
-default_run_options[:pty] = true 
+default_run_options[:pty] = true
+
 desc "Restart Passenger"
 namespace :deploy do
   task :restart do

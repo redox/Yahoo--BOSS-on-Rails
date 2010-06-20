@@ -2,7 +2,7 @@ development:
   application_id: "HQUIRxTV34GuZKDu_wxG6L9dmjhdP7YNppwo1snzNVcoxc6Dv0MsQWSbxxwQNusw7oi7KBxd29g-"
 
 test:
-  application_id: ""
+  application_id: "HQUIRxTV34GuZKDu_wxG6L9dmjhdP7YNppwo1snzNVcoxc6Dv0MsQWSbxxwQNusw7oi7KBxd29g-"
 
 production:
-  application_id: ""
+  application_id: "HQUIRxTV34GuZKDu_wxG6L9dmjhdP7YNppwo1snzNVcoxc6Dv0MsQWSbxxwQNusw7oi7KBxd29g-"
